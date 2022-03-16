@@ -1,0 +1,36 @@
+{
+  "name": "m6-d3-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "prestart": "npm run create-tables",
+    "create-tables": "node -r dotenv/config ./create-tablesjs",
+    "start": "node -r dotenv/config ./src/index.js",
+    "dev": "nodemon -r dotenv/config ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anucherukuri/M6-D3-HW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anucherukuri/M6-D3-HW/issues"
+  },
+  "homepage": "https://github.com/anucherukuri/M6-D3-HW#readme",
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-list-endpoints": "^6.0.0",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.17.0"
+  }
+}
